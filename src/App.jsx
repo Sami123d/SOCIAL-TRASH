@@ -1,15 +1,10 @@
 import React from "react";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
+import './app.css'
 import Home from "./Pages/homess/Home.jsx";
-import post
 function App() {
   return (
     <>
-      
-      <AcUnitIcon />
-      <p>SAMI</p>
       <Home />
-      <post/>
     </>
   );
 }

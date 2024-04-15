@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Topbar from "../../Components/topbar/Topbar.jsx";
 
 function home() {
   return (
-    <div>home</div>
-  )
+    <>
+      <Topbar />
+    </>
+  );
 }
 
-export default home
+export default home;

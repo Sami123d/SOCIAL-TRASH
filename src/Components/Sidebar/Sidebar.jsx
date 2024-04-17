@@ -1,3 +1,4 @@
+import CloseFriend from "../closefriend/CloseFriend";
 import "./sidebar.css";
 import {
   Chat,
@@ -10,6 +11,7 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
+import {Users} from '../../dummyData'
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -55,39 +57,9 @@ function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <div className="sidebarFriendList">
-          <div className="sidebarFriend">
-            <img
-              src="/src/assets/Person/2.jpeg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">John Doe</span>
-          </div>
-
-          <div className="sidebarFriend">
-            <img
-              src="/src/assets/Person/2.jpeg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">John Doe</span>
-          </div>
-          <div className="sidebarFriend">
-            <img
-              src="/src/assets/Person/2.jpeg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">John Doe</span>
-          </div>
-          <div className="sidebarFriend">
-            <img
-              src="/src/assets/Person/2.jpeg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">John Doe</span>
-          </div>
+          {Users.map(user=><CloseFriend key={user.id} User={user} />)}
+          
+          
         </div>
       </div>
     </div>

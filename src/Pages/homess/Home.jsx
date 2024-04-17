@@ -4,7 +4,7 @@ import Feed from "../../Components/feed/Feed.jsx";
 import Sidebar from "../../Components/Sidebar/Sidebar.jsx";
 import Rightbar from "../../Components/rightbar/Rightbar.jsx";
 
-function home() {
+function Home() {
   return (
     <>
       <Topbar />
@@ -17,4 +17,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

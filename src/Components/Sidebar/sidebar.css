@@ -2,6 +2,8 @@
   flex: 3;
   height: calc(100vh - 50px);
   overflow-y: scroll;
+  position: sticky;
+  top: 50px;
 
 }
 .sidebarWrapper{
@@ -28,18 +30,7 @@
 .sidebarHr{
     margin: 10px 0;
 }
-.sidebarFriendImg{
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 18px;
-}
-.sidebarFriend{
-    display: flex;
-    align-items: center;
-     margin-bottom: 20px;
-}
+
 ::-webkit-scrollbar {
     width: 5px;
   }
